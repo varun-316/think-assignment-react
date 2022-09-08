@@ -15,14 +15,14 @@ const Home = () => {
 
   return (
     <MainContext.Provider value={[mainState, setMainState]}>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route exact path={"/"} element={<Login />} />
           <Route
             path={"/personal"}
             element={
-              <PrivateRoute>
+              <PrivateRoute route="login">
                 <Personal />
               </PrivateRoute>
             }

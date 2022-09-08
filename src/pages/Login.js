@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Form from "../components/Form";
 import { loginFormData } from "../data/loginFormData";
+import { MainContext } from "./Home";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const [main, setMain] = useContext(MainContext);
+  const navigate = useNavigate();
   const [loginData, setLoginData] = useState({
     "login-submit": "Login",
   });
-  const handleOnLogin = (e) => {
-    console.log(loginData);
+
+  useEffect(() => {
+    console.log(main);
+  }, [main]);
+
+  const handleOnLogin = async (e) => {
     e.preventDefault();
+    await setMain({ ...main, login: loginData });
+    await navigate("/personal");
   };
 
   return (
