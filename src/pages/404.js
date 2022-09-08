@@ -1,7 +1,7 @@
 import React from "react";
 
-const page404 = () => {
-  return <React.Fragment>Page not found</React.Fragment>;
+const Page404 = () => {
+  return <React.Fragment>404 not found</React.Fragment>;
 };
 
-export default page404;
+export default Page404;

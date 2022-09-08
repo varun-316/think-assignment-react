@@ -5,6 +5,7 @@ import Login from "./Login";
 import Personal from "./Personal";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PrivateRoute from "../components/Routing/PrivateRoute";
+import Page404 from "./404";
 
 export const MainContext = createContext({});
 
@@ -40,6 +41,7 @@ const Home = () => {
               </PrivateRoute>
             }
           />
+          <Route path={"*"} element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </MainContext.Provider>
