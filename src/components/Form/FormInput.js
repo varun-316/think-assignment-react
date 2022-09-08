@@ -2,11 +2,14 @@ import React, { useState, useContext, useEffect } from "react";
 import { FormContext } from "../Form";
 
 const FormInput = (
-  { type, id, className, requiredFlag, placeholder, name, value },
+  { type, id, className, requiredFlag, placeholder, name },
   key
 ) => {
-  const [val, setVal] = useState(value ? value : "");
   const [contextVal, setContext] = useContext(FormContext);
+  const valInp = contextVal.hasOwnProperty(`${name}`)
+    ? contextVal[`${name}`]
+    : "";
+  const [val, setVal] = useState(valInp);
   useEffect(() => {
     const contextObj = {
       ...contextVal,
