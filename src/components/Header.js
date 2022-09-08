@@ -4,10 +4,10 @@ import Title from "./Header/Title";
 
 const Header = () => {
   return (
-    <React.Fragment>
+    <div id={"header"}>
       <Title title="Think React Assignment" />
       <LoginButton />
-    </React.Fragment>
+    </div>
   );
 };
 
