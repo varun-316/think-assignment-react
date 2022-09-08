@@ -4,11 +4,7 @@ import Form from "../components/Form";
 import { loginFormData } from "../data/loginFormData";
 
 const Home = () => {
-  return (
-    <React.Fragment>
-      <Form formData={loginFormData} method={""} action={() => {}} />
-    </React.Fragment>
-  );
+  return <React.Fragment></React.Fragment>;
 };
 
 export default Home;

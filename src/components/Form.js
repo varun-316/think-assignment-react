@@ -1,13 +1,23 @@
-import React from "react";
+import React, { createContext } from "react";
 import FormInput from "./Form/FormInput";
 
-const Form = ({ formData, action, id, method }) => {
+export const FormContext = createContext();
+
+const Form = ({ formData, handleOnSubmit, id, method, context }) => {
   return (
-    <form action={action} id={id} method={method}>
-      {formData.map((element) => {
-        return <FormInput {...element} />;
-      })}
-    </form>
+    <FormContext.Provider value={context}>
+      <form
+        onSubmit={(e) => {
+          handleOnSubmit(e);
+        }}
+        id={id}
+        method={method}
+      >
+        {formData.map((element, i) => {
+          return <FormInput {...element} key={i} />;
+        })}
+      </form>
+    </FormContext.Provider>
   );
 };
 
