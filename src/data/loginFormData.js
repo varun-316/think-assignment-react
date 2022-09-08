@@ -6,7 +6,6 @@ export const loginFormData = [
     className: "",
     requiredFlag: true,
     placeholder: "Enter your Username",
-    value: "",
   },
   {
     type: "password",
@@ -15,7 +14,6 @@ export const loginFormData = [
     className: "",
     requiredFlag: true,
     placeholder: "Enter your Password",
-    value: "",
   },
   {
     type: "submit",
@@ -24,6 +22,5 @@ export const loginFormData = [
     className: "",
     requiredFlag: true,
     placeholder: "",
-    value: "Login",
   },
 ];
