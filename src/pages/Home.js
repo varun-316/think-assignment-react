@@ -1,10 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
-import Form from "../components/Form";
-import { loginFormData } from "../data/loginFormData";
+import Login from "./Login";
+import Personal from "./Personal";
 
 const Home = () => {
-  return <React.Fragment></React.Fragment>;
+  return (
+    <React.Fragment>
+      <Login />
+      <Personal />
+    </React.Fragment>
+  );
 };
 
 export default Home;
