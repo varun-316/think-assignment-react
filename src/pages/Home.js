@@ -6,6 +6,7 @@ import Personal from "./Personal";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PrivateRoute from "../components/Routing/PrivateRoute";
 import Page404 from "./404";
+import Header from "../components/Header";
 
 export const MainContext = createContext({});
 
@@ -14,6 +15,7 @@ const Home = () => {
 
   return (
     <MainContext.Provider value={[mainState, setMainState]}>
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route exact path={"/"} element={<Login />} />
