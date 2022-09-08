@@ -6,7 +6,7 @@ const Personal = () => {
   const [personalData, setPersonalData] = useState({
     "personal-submit": "Next",
   });
-  const handleOnLogin = (e) => {
+  const handleOnSubmit = (e) => {
     console.log(personalData);
     e.preventDefault();
   };
@@ -14,7 +14,7 @@ const Personal = () => {
   return (
     <Form
       formData={personalFormData}
-      handleOnSubmit={handleOnLogin}
+      handleOnSubmit={handleOnSubmit}
       context={[personalData, setPersonalData]}
     />
   );

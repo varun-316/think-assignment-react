@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Govt from "./Govt";
 import Login from "./Login";
 import Personal from "./Personal";
 
@@ -8,6 +8,7 @@ const Home = () => {
     <React.Fragment>
       <Login />
       <Personal />
+      <Govt />
     </React.Fragment>
   );
 };
