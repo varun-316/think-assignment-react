@@ -9,6 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [loginData, setLoginData] = useState({
     "login-submit": "Login",
+    ...main["login"],
   });
 
   useEffect(() => {

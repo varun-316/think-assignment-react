@@ -22,7 +22,7 @@ const Home = () => {
           <Route
             path={"/personal"}
             element={
-              <PrivateRoute route="login">
+              <PrivateRoute route={"login"}>
                 <Personal />
               </PrivateRoute>
             }
@@ -30,7 +30,7 @@ const Home = () => {
           <Route
             path={"/govt"}
             element={
-              <PrivateRoute>
+              <PrivateRoute route={"personal"}>
                 <Govt />
               </PrivateRoute>
             }
@@ -38,7 +38,7 @@ const Home = () => {
           <Route
             path={"/address"}
             element={
-              <PrivateRoute>
+              <PrivateRoute route="govt">
                 <Address />
               </PrivateRoute>
             }
