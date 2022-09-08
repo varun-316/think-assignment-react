@@ -32,11 +32,11 @@ export const personalFormData = [
     placeholder: "Enter your phone number",
   },
   {
-    type: "sumit",
-    id: "phone",
-    name: "phone",
+    type: "submit",
+    id: "personal-submit",
+    name: "personal-submit",
     className: "",
     requiredFlag: true,
-    placeholder: "Enter your phone number",
+    placeholder: "",
   },
 ];
