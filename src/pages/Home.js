@@ -3,6 +3,7 @@ import Address from "./Address";
 import Govt from "./Govt";
 import Login from "./Login";
 import Personal from "./Personal";
+import Details from "./Details";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PrivateRoute from "../components/Routing/PrivateRoute";
 import Page404 from "./404";
@@ -43,14 +44,14 @@ const Home = () => {
               </PrivateRoute>
             }
           />
-          {/* <Route
+          <Route
             path={"/details"}
             element={
               <PrivateRoute route="address">
-                <></>
+                <Details />
               </PrivateRoute>
             }
-          /> */}
+          />
           <Route path={"*"} element={<Page404 />} />
         </Routes>
       </BrowserRouter>

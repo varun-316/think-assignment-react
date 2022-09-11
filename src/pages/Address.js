@@ -14,7 +14,7 @@ const Address = () => {
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     await setMain({ ...main, address: addrData });
-    // await navigate("/details");
+    await navigate("/details");
   };
 
   return (
