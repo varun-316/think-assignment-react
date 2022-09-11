@@ -12,10 +12,6 @@ const Login = () => {
     ...main["login"],
   });
 
-  useEffect(() => {
-    console.log(main);
-  }, [main]);
-
   const handleOnLogin = async (e) => {
     e.preventDefault();
     await setMain({ ...main, login: loginData });
