@@ -43,6 +43,14 @@ const Home = () => {
               </PrivateRoute>
             }
           />
+          {/* <Route
+            path={"/details"}
+            element={
+              <PrivateRoute route="address">
+                <></>
+              </PrivateRoute>
+            }
+          /> */}
           <Route path={"*"} element={<Page404 />} />
         </Routes>
       </BrowserRouter>
