@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/think-assignment-react/static/css/main.f51d0374.css",
+    "main.js": "/think-assignment-react/static/js/main.5120927f.js",
+    "static/js/787.7ec32871.chunk.js": "/think-assignment-react/static/js/787.7ec32871.chunk.js",
+    "index.html": "/think-assignment-react/index.html",
+    "main.f51d0374.css.map": "/think-assignment-react/static/css/main.f51d0374.css.map",
+    "main.5120927f.js.map": "/think-assignment-react/static/js/main.5120927f.js.map",
+    "787.7ec32871.chunk.js.map": "/think-assignment-react/static/js/787.7ec32871.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f51d0374.css",
+    "static/js/main.5120927f.js"
+  ]
+}
