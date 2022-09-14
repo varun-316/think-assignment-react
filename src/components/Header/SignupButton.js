@@ -4,7 +4,7 @@ import { MainContext } from "../../pages/Home";
 
 const SignupButton = () => {
   const navigate = useNavigate();
-  const [main, setMain] = useContext(MainContext);
+  const [main] = useContext(MainContext);
   const [isLogin, setIsLogin] = useState(false);
   const handleOnClick = (e) => {
     e.preventDefault();
