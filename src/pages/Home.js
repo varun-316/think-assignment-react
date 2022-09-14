@@ -4,6 +4,7 @@ import Govt from "./Govt";
 import Login from "./Login";
 import Personal from "./Personal";
 import Details from "./Details";
+import Signup from "./Signup";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PrivateRoute from "../components/Routing/PrivateRoute";
 import Page404 from "./404";
@@ -19,7 +20,8 @@ const Home = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route exact path={"/"} element={<Login />} />
+          <Route exact path={"/"} element={<Signup />} />
+          <Route path={"/login"} element={<Login />} />
           <Route
             path={"/personal"}
             element={
